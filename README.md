@@ -9,8 +9,8 @@ This project is a simple number guessing game built using HTML, CSS, and JavaScr
 
 ## Features
 
-- Modal window with overlay
-- Multiple buttons to trigger the modal
-- Close button inside the modal
-- Close modal by clicking outside the modal (overlay)
-- Close modal by pressing the Escape key
+- Random number generation between 1 and 20
+- Input field for player guesses
+- Feedback messages for high, low, and correct guesses
+- Score tracking with decrement on incorrect guesses
+- High score tracking
