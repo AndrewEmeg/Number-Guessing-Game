@@ -20,4 +20,4 @@ This project is a simple number guessing game built using HTML, CSS, and JavaScr
 - Enter a guess in the input field and click the "Check!" button.
 - The game will provide feedback on whether your guess is too high, too low, or correct.
 - Your score decreases with each incorrect guess.
-- Click the "Again!" button to restart the game with a new random number.
+- Click the "Again!" button to restart the game with a new random number, but with the highscore preserved.
