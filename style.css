@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Press+Start+2P&display=swap');
+@import url("https://fonts.googleapis.com/css?family=Press+Start+2P&display=swap");
 
 * {
   margin: 0;
@@ -12,7 +12,7 @@ html {
 }
 
 body {
-  font-family: 'Press Start 2P', sans-serif;
+  font-family: "Press Start 2P", sans-serif;
   color: #eee;
   background-color: #222;
   /* background-color: #60b347; */
@@ -34,14 +34,14 @@ main {
 }
 
 .left {
-  width: 52rem;
+  max-width: 52rem;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
 .right {
-  width: 52rem;
+  max-width: 52rem;
   font-size: 2rem;
 }
 
@@ -116,4 +116,69 @@ h1 {
 
 .label-score {
   margin-bottom: 2rem;
+}
+
+@media (max-width: 28em) {
+  html {
+    font-size: 45%;
+  }
+  main {
+    /* display: block; */
+    background-color: #14213d;
+    display: grid;
+    grid-template-columns: 1fr;
+    max-width: 100%;
+  }
+  .left {
+    grid-row: 2;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    max-width: 100%;
+  }
+  .right {
+    display: grid;
+    max-width: 100%;
+    grid-template-columns: 1fr;
+    justify-items: center;
+    /* align-items: center; */
+  }
+  .message {
+    margin-top: 2rem;
+    margin-bottom: 4rem;
+    height: 3rem;
+  }
+  header {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 2.5fr 1fr 2.5fr;
+    justify-items: center;
+    align-items: center;
+    background-color: black;
+  }
+
+  .between {
+    position: static;
+    top: 2rem;
+    right: 2rem;
+    align-self: self-start;
+  }
+
+  .again {
+    position: static;
+    align-self: self-start;
+
+    top: 2rem;
+    left: 2rem;
+  }
+  h1 {
+    font-size: 4rem;
+    text-align: center;
+    position: static;
+    width: 100%;
+    top: 52%;
+    left: 50%;
+    transform: none;
+    /* padding: 2rem 0; */
+  }
 }
